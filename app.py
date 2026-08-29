@@ -14,6 +14,21 @@ st.markdown(
         background-color: #ffffff !important;
         color: #000000 !important;
     }
+    
+    /* 🟢 NEW: This fixes the button colors */
+    .stButton>button {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 2px solid #000000 !important;
+        font-weight: bold !important;
+    }
+    
+    /* 🟢 NEW: This makes the success text crisp and readable */
+    div[data-testid="stNotification"] {
+        background-color: #ffffff !important;
+        color: #000000 !important;
+        border: 1px solid #000000 !important;
+    }
     </style>
     """,
     unsafe_allow_html=True
