@@ -15,7 +15,7 @@ st.markdown(
         color: #000000 !important;
     }
     
-    /* 🟢 NEW: This fixes the button colors */
+    /* This fixes the button colors */
     .stButton>button {
         background-color: #ffffff !important;
         color: #000000 !important;
@@ -23,16 +23,20 @@ st.markdown(
         font-weight: bold !important;
     }
     
-    /* 🟢 NEW: This makes the success text crisp and readable */
+    /* This forces EVERYTHING inside the notification block to be bold black text */
     div[data-testid="stNotification"] {
         background-color: #ffffff !important;
+        border: 2px solid #000000 !important;
+    }
+    div[data-testid="stNotification"] * {
         color: #000000 !important;
-        border: 1px solid #000000 !important;
+        font-weight: bold !important;
     }
     </style>
     """,
     unsafe_allow_html=True
 )
+
 
 
 # App Header
