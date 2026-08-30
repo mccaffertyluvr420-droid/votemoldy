@@ -58,7 +58,7 @@ if "candy_count" not in st.session_state:
 
 if st.button("Click to grab a pack of Smarties!"):
     st.session_state.candy_count += 1
-    st.success(f"You took a pack! Total Smarties handed out: {st.session_state.candy_count}")
+    st.markdown(f"###  You took a pack! Total Smarties handed out: **{st.session_state.candy_count}**")
 
 # Your Campaign Promises
 st.write("---")
